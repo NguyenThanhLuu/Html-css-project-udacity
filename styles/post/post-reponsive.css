@@ -1,0 +1,61 @@
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .card-img {
+        width: 25vw;
+        height: 20vh;
+        border-radius: 40px;
+        padding-top: 4px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        height: 43px;
+        max-width: 190px;
+        text-align: center;
+    }
+
+    .copyright {
+        margin-left: auto;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .image-modify {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 46.1875em) {
+    h1 {
+        text-align: center;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .author-about {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-item {
+        width: 100%;
+    }
+
+    .main-content {
+        grid-column: 1 / span 3;
+    }
+}

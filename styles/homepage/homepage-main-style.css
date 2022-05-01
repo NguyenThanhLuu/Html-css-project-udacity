@@ -1,0 +1,259 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 40vh auto auto auto;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.header {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background: url(../../imgs/Binh-dinh-ky-co.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-family: cursive;
+}
+
+.text-header {
+    color: #fff;
+    text-shadow: 4px 2px 4px #000;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header-image {
+    background: url(../imgs/Binh-dinh-header.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252525;
+    padding: 4px 0;
+    padding: 12px 0;
+    border-top: 1px solid #fff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.nav-link {
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.nav-link:hover {
+    color: #ff0;
+    border-top: 4px solid #ff0;
+    border-bottom: 4px solid #ff0;
+    transition: 0.1s;
+}
+
+.nav-link:active {
+    color: #00f;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    right: 0;
+    position: absolute;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+    transition-duration: 0.2s;
+}
+
+.textbox {
+    width: 0px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    line-height: 40px;
+    font-size: 1.6rem;
+    background-color: transparent;
+    outline: none;
+    height: 100%;
+    float: left;
+    color: #fff;
+    transition-duration: 0.05s;
+}
+
+.search-btn {
+    background-color: transparent;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 100%;
+    transition-duration: 0.2s;
+    margin: 10px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar:hover>.textbox {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+
+.search-bar:hover>.search-btn {
+    transition-duration: 0.2s;
+}
+
+.search-btn:hover {
+    transition-duration: 0.2s;
+}
+
+.search-btn:hover>p {
+    transition-duration: 0.2s;
+}
+
+.main-content {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+.post-info {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.ground-title {
+    margin-top: 10px;
+}
+
+.specialties {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #dee0fd;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.scenic-spots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #dadada;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    margin-top: 20px;
+}
+
+.card-img {
+    width: 20vw;
+    height: 30vh;
+    border-radius: 40px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+
+.card-detail {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #3ba13b;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-detail:hover {
+    background-color: #089208;
+}
+
+.main-title {
+    margin-bottom: 2rem;
+}
+
+.post-content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.footer {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    background-color: #252525;
+    color: #fff;
+}
+
+.author-about {
+    text-align: left;
+    border: 1px solid;
+    width: 30vw;
+    float: right;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.copyright {
+    margin-bottom: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 40%;
+}
+
+.social-media {
+    padding: 6px;
+    text-decoration: none;
+}
+
+.ti-facebook {
+    color: #3f3fc7;
+}
+
+.ti-linkedin {
+    color: #fff;
+    background-color: #00f;
+    padding: 2px;
+}
+
+.ti-instagram {
+    color: #fa5f79;
+}
+
